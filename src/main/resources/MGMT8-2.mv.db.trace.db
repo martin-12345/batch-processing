@@ -1,0 +1,3 @@
+2019-12-08 11:14:27 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "TEST_DATA" not found; SQL statement:
+SELECT id, name, created_on FROM TEST_DATA [42102-199]

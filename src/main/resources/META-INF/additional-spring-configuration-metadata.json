@@ -1,0 +1,132 @@
+{"properties": [
+  {
+    "name": "mongo.tracker.collection",
+    "type": "java.lang.String",
+    "description": "A description for 'mongo.tracker.collection'"
+  },
+  {
+    "name": "mongo.tracker.chunk",
+    "type": "java.lang.String",
+    "description": "A description for 'mongo.tracker.chunk'"
+  },
+  {
+    "name": "publish.master.datasoruce",
+    "type": "java.lang.String",
+    "description": "A description for 'publish.master.datasoruce'"
+  },
+  {
+    "name": "publish.master.url",
+    "type": "java.lang.String",
+    "description": "A description for 'publish.master.url'"
+  },
+  {
+    "name": "publish.master.username",
+    "type": "java.lang.String",
+    "description": "A description for 'publish.master.username'"
+  },
+  {
+    "name": "publish.master.password",
+    "type": "java.lang.String",
+    "description": "A description for 'publish.master.password'"
+  },
+  {
+    "name": "publish.master.driver-class-name",
+    "type": "java.lang.String",
+    "description": "A description for 'publish.master.driver-class-name'"
+  },
+  {
+    "name": "publish.master.datasource",
+    "type": "java.lang.String",
+    "description": "A description for 'publish.master.datasource'"
+  },
+  {
+    "name": "publish.datasource.url",
+    "type": "java.lang.String",
+    "description": "A description for 'publish.datasource.url'"
+  },
+  {
+    "name": "publish.datasource.username",
+    "type": "java.lang.String",
+    "description": "A description for 'publish.datasource.username'"
+  },
+  {
+    "name": "publish.datasource.driver-class-name",
+    "type": "java.lang.String",
+    "description": "A description for 'publish.datasource.driver-class-name'"
+  },
+  {
+    "name": "publish.datasource.password",
+    "type": "java.lang.String",
+    "description": "A description for 'publish.datasource.password'"
+  },
+  {
+    "name": "spring.publish.url",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.publish.url'"
+  },
+  {
+    "name": "spring.publish.username",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.publish.username'"
+  },
+  {
+    "name": "spring.publish.password",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.publish.password'"
+  },
+  {
+    "name": "spring.publish.driver-class-name",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.publish.driver-class-name'"
+  },
+  {
+    "name": "spring.publish-datasource.url",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.publish-datasource.url'"
+  },
+  {
+    "name": "spring.publish-datasource.username",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.publish-datasource.username'"
+  },
+  {
+    "name": "spring.publish-datasource.driver-class-name",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.publish-datasource.driver-class-name'"
+  },
+  {
+    "name": "spring.publish-datasource.password",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.publish-datasource.password'"
+  },
+  {
+    "name": "spring.datasource.jdbc-url",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.datasource.jdbc-url'"
+  },
+  {
+    "name": "spring.publish-datasource.jdbc-url",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.publish-datasource.jdbc-url'"
+  },
+  {
+    "name": "spring.publish.jdbc-url",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.publish.jdbc-url'"
+  },
+  {
+    "name": "spring.publish-ds.url",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.publish-ds.url'"
+  },
+  {
+    "name": "spring.publish-ds.username",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.publish-ds.username'"
+  },
+  {
+    "name": "spring.publish-ds.password",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.publish-ds.password'"
+  }
+]}

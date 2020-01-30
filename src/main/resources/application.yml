@@ -1,0 +1,16 @@
+
+spring:
+  datasource:
+    url:  jdbc:h2:/home/martin/git/batch-processing/src/main/resources/MGMT8-2
+    username: martin
+    password: 
+
+  publish-ds:
+     url:  jdbc:h2:/home/martin/git/batch-processing/src/main/resources/MGMT8-2
+     username: martin
+     password: 
+    
+mongo:
+  tracker:
+    collection: tracker
+    chunk:  100
