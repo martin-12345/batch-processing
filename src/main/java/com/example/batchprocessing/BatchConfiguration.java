@@ -3,6 +3,7 @@ package com.example.batchprocessing;
 import javax.sql.DataSource;
 
 import org.springframework.batch.core.Job;
+import org.springframework.batch.core.JobParametersValidator;
 import org.springframework.batch.core.Step;
 import org.springframework.batch.core.configuration.annotation.EnableBatchProcessing;
 import org.springframework.batch.core.configuration.annotation.JobBuilderFactory;
@@ -62,15 +63,26 @@ public class BatchConfiguration {
 	}
 
 	@Bean
-	public Job importUserJob(JobCompletionNotificationListener listener, Step step1) {
-		return jobBuilderFactory.get("importUserJob").incrementer(new RunIdIncrementer()).listener(listener).flow(step1)
+	public Job importUserJob(JobCompletionNotificationListener listener, Step step1, JobParametersValidator validator) {
+		return jobBuilderFactory.get("importUserJob")
+				.validator(validator)
+				.incrementer(new RunIdIncrementer())
+				.listener(listener)
+				.flow(step1)
 				.end().build();
 	}
 
 	@Bean
 	public Step step1(ItemWriter<Person> writer, ItemReader<Person> reader, ItemProcessor<Person, Person> processor) {
-		return stepBuilderFactory.get("step1").<Person, Person>chunk(chunkSize).reader(reader)
+		return stepBuilderFactory.get("step1")
+				.<Person, Person>chunk(chunkSize)
+				.reader(reader)
 				// .processor(processor)
 				.writer(writer).build();
+	}
+	
+	@Bean 
+	public JobParametersValidator validator() {
+		return new JobJVMArgsValidator( );
 	}
 }
