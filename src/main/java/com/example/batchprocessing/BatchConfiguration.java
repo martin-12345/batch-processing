@@ -37,9 +37,12 @@ public class BatchConfiguration {
 	private String collection;
 	@Value("${mongo.tracker.chunk}")
 	private int chunkSize;
+	@Value("#{environment.dbusername}")
+	String name;
 
 	@Bean(destroyMethod = "")
 	public ItemReader<Person> gpxReader(@Qualifier("publish-ds") DataSource datasource) {
+		System.out.println("name="+name);
 		JdbcCursorItemReader<Person> databaseReader = new JdbcCursorItemReader<>();
 
 		databaseReader.setDataSource(datasource);
